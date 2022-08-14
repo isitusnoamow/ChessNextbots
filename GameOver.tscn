@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/goqueen.png" type="Texture" id=1]
+[ext_resource path="res://assets/gobishop.png" type="Texture" id=2]
+[ext_resource path="res://assets/gopawn.png" type="Texture" id=3]
+[ext_resource path="res://assets/goknight.png" type="Texture" id=4]
+[ext_resource path="res://assets/gorook.png" type="Texture" id=5]
+[ext_resource path="res://assets/restart.png" type="Texture" id=6]
+[ext_resource path="res://GameOver.gd" type="Script" id=7]
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="Goqueen" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Gopawn" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Gorook" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Goknight" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1, 0 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Gobishop" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Restart" type="Sprite" parent="."]
+position = Vector2( 512, 400 )
+texture = ExtResource( 6 )
