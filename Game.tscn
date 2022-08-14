@@ -469,4 +469,3 @@ position = Vector2( 152, 181 )
 
 [node name="Queen" parent="." instance=ExtResource( 4 )]
 position = Vector2( 31, 409 )
-speed = 100
